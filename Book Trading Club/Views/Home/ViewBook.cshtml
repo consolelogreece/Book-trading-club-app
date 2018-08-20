@@ -1,0 +1,15 @@
+﻿@model Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable<BookTradingClub.Models.Book>
+@{
+    ViewData["Title"] = "ViewBook";
+}
+
+@foreach (var book in Model)
+{
+    <h2>@book.Title</h2>
+    <h2>@book.Description</h2>
+    <h2>@book.Author</h2>
+    <h5>@book.Id</h5>
+    <h5>@book.OwnerId</h5>
+
+}
+

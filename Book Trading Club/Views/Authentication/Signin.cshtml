@@ -1,0 +1,28 @@
+﻿@model SigninViewModel
+
+<form method="post" asp-action="Signin" asp-controller="Authentication">
+    <div asp-validation-summary="All"></div>
+
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div>
+        <label asp-for="RememberMe"></label>
+        <input asp-for="RememberMe" />
+    </div>
+
+    <div> <input type="submit" value="Sign in"/> <a asp-action="Register">Register</a></div>
+
+
+</form>
+
+
